@@ -8,7 +8,7 @@ import com.authentication.taskflow.dto.response.BaseApiResponse;
 import com.authentication.taskflow.dto.response.UserResponseDto;
 import com.authentication.taskflow.dto.request.LoginRequestDto;
 
-@FeignClient(name = "taskk")
+@FeignClient(name = "TASKK-SERVICE")
 public interface TaskflowUserClient {
 
     @PostMapping("/api/users/validate-credentials")
