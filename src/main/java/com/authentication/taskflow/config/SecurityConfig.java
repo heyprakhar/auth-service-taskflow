@@ -29,5 +29,3 @@ public class SecurityConfig {
         return http.build();
     }
 }
-
-while hitting this -http:// localhost:8082/swagger-ui/index.html
