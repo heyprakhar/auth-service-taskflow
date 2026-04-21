@@ -12,7 +12,7 @@ public class UserResponseDto {
 
     private String email;
 
-    private String role;
+    private String roleName;
 
     private boolean isActive;
 }
