@@ -39,11 +39,11 @@ public class AuthServiceImpl implements AuthService {
 
         UserResponseDto user = response.getData();
 
-        String token = jwtService.generateAccessToken(user.getEmail(), user.getRole());
+        String token = jwtService.generateAccessToken(user.getEmail(), user.getRoleName());
 
         log.info("*** [AUTH SERVICE] :: [AuthServiceImpl] :: [login] :: Login successful | email: {} | role: {}",
                 user.getEmail(),
-                user.getRole());
+                user.getRoleName());
 
         return new AuthResponseDto(token);
     }
